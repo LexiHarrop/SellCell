@@ -20,18 +20,45 @@
 
 /* Begin PBXFileReference section */
 		D31EF78F2C9E06320060615E /* SellCell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SellCell; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31EF79D2C9E06490060615E /* SellCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SellCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D31EF7AD2C9E5D550060615E /* Exceptions for "SellCell" folder in "SellCellTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Functions/calculatePlans.swift,
+				Structures/planResponseStructure.swift,
+			);
+			target = D31EF79C2C9E06490060615E /* SellCellTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D31EF7912C9E06320060615E /* SellCell */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D31EF7AD2C9E5D550060615E /* Exceptions for "SellCell" folder in "SellCellTests" target */,
+			);
 			path = SellCell;
+			sourceTree = "<group>";
+		};
+		D31EF79E2C9E06490060615E /* SellCellTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SellCellTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D31EF78C2C9E06320060615E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31EF79A2C9E06490060615E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D31EF7912C9E06320060615E /* SellCell */,
+				D31EF79E2C9E06490060615E /* SellCellTests */,
 				D31EF7902C9E06320060615E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D31EF78F2C9E06320060615E /* SellCell */,
+				D31EF79D2C9E06490060615E /* SellCellTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +111,28 @@
 			productReference = D31EF78F2C9E06320060615E /* SellCell */;
 			productType = "com.apple.product-type.tool";
 		};
+		D31EF79C2C9E06490060615E /* SellCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31EF7A12C9E06490060615E /* Build configuration list for PBXNativeTarget "SellCellTests" */;
+			buildPhases = (
+				D31EF7992C9E06490060615E /* Sources */,
+				D31EF79A2C9E06490060615E /* Frameworks */,
+				D31EF79B2C9E06490060615E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D31EF79E2C9E06490060615E /* SellCellTests */,
+			);
+			name = SellCellTests;
+			packageProductDependencies = (
+			);
+			productName = SellCellTests;
+			productReference = D31EF79D2C9E06490060615E /* SellCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +144,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					D31EF78E2C9E06320060615E = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D31EF79C2C9E06490060615E = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +166,30 @@
 			projectRoot = "";
 			targets = (
 				D31EF78E2C9E06320060615E /* SellCell */,
+				D31EF79C2C9E06490060615E /* SellCellTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D31EF79B2C9E06490060615E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D31EF78B2C9E06320060615E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31EF7992C9E06490060615E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +335,34 @@
 			};
 			name = Release;
 		};
+		D31EF7A22C9E06490060615E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuutrai.SellCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D31EF7A32C9E06490060615E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuutrai.SellCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +380,15 @@
 			buildConfigurations = (
 				D31EF7972C9E06330060615E /* Debug */,
 				D31EF7982C9E06330060615E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31EF7A12C9E06490060615E /* Build configuration list for PBXNativeTarget "SellCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31EF7A22C9E06490060615E /* Debug */,
+				D31EF7A32C9E06490060615E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
